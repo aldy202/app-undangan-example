@@ -14,7 +14,7 @@
         "APP_NAME": "Template",
         "APP_ENV": "production",
         "APP_DEBUG": "false",
-        "APP_URL": "https://app-undangan-example-1c11wplqa-aldy202s-projects.vercel.app",
+        "APP_URL": "https://app-undangan-example.vercel.app",
         "APP_KEY": "base64:QiNmbz8q/ajYgQCNbWLSjAuXV5NlDevxu6Oz7Y+REjE=",
 
         "APP_CONFIG_CACHE": "/tmp/config.php",

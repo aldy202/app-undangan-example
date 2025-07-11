@@ -9,6 +9,7 @@
     <div class="row row-sm">
         <div class="col-lg-12">
             <div class="card">
+                {{-- tambah komen --}}
                 <div class="card-header d-md-flex flex-row justify-content-between">
                     <h3 class="card-title">Kategori Table</h3>
                     @if ($can_insert)

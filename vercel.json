@@ -2,40 +2,32 @@
     "version": 2,
     "framework": null,
     "functions": {
-        "api/index.php": {
-            "runtime": "vercel-php@0.6.0" 
-        }
+        "api/index.php": { "runtime": "vercel-php@0.4.3" }
     },
     "routes": [
         { "src": "/build/(.*)", "dest": "/public/build/" },
         { "src": "/(.*)", "dest": "/api/index.php" }
     ],
+    "public": true,
+    "outputDirectory": "public",
     "env": {
-        "APP_NAME": "Template",
         "APP_ENV": "production",
         "APP_DEBUG": "false",
         "APP_URL": "https://app-undangan-example.vercel.app",
         "APP_KEY": "base64:QiNmbz8q/ajYgQCNbWLSjAuXV5NlDevxu6Oz7Y+REjE=",
-
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
         "APP_PACKAGES_CACHE": "/tmp/packages.php",
         "APP_ROUTES_CACHE": "/tmp/routes.php",
         "APP_SERVICES_CACHE": "/tmp/services.php",
         "VIEW_COMPILED_PATH": "/tmp",
-
-        "LOG_CHANNEL": "stderr",
-        "LOG_LEVEL": "debug",
-
         "CACHE_DRIVER": "array",
-        "FILESYSTEM_DRIVER": "local",
-        "QUEUE_CONNECTION": "sync",
+        "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie",
-
-        "DEBUGBAR_ENABLED": "false",
-        "SUPER_ADMIN_ROLE": "Administrator",
-        "USER_INPUT_ANGKATAN": "true",
-
-        "DB_CONNECTION": "mysql"
+        "DB_CONNECTION": "mysql",
+        "DB_HOST": "127.0.0.1",
+        "DB_PORT": "3306",
+        "DB_DATABASE": "templateundangan",
+        "DB_USERNAME": "root"
     }
 }
